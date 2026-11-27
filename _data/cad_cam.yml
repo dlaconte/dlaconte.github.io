@@ -20,12 +20,12 @@
   caption: Filleted walls and a divider, chosen to practice layup over difficult geometry.
   project: carbon-tray
 - image: /assets/img/projects/radar-connector/cad-mold-cavity.png
-  title: Injection mold insert, cavity half
+  title: Bracket mold, cavity half
   software: Fusion
   caption: Bracket cavity and sprue, sized to fit the aluminum mold frame.
   project: radar-connector
 - image: /assets/img/projects/radar-connector/cad-mold-core.png
-  title: Injection mold insert, core half
+  title: Bracket mold, core half
   software: Fusion
   caption: The raised boss forms the connector pocket in the molded part.
   project: radar-connector
@@ -35,7 +35,7 @@
   caption: Final molded bracket with the mounting tab, screw hole and connector slot.
   project: radar-connector
 - image: /assets/img/projects/radar-connector/cad-clip.png
-  title: Connector clip
+  title: Cable-management cap
   software: Fusion
-  caption: Small molded clip with an oval collar, from the same project.
+  caption: Molded cap that fits over the ends of the connector parts.
   project: radar-connector
