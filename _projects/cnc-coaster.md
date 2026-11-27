@@ -41,6 +41,27 @@ I used a part from the original program as a baseline. The pocket floors had a p
 
 ## CAM
 
+### Chamfer and engraving: 9:20 → 6:06
+
+In the original program, the top-face chamfer and engraving took 9:20 of machining time. The rebuilt operations cover the same features in 6:06, and the full program uses fewer tool changes.
+
+<div class="gallery gallery-cad gallery-wide">
+{% include figure.html src="/assets/img/projects/cnc-coaster/cam-time-old.png" caption="Original program: chamfer and engraving, 9:20." alt="Fusion CAM showing the original program's three chamfer and engraving operations with a total machining time of 9 minutes 20 seconds" %}
+{% include figure.html src="/assets/img/projects/cnc-coaster/cam-time-new.png" caption="Rebuilt program: chamfer, CODES and year engraving, 6:06." alt="Fusion CAM showing the rebuilt program's chamfer and engraving operations with a total machining time of 6 minutes 6 seconds" %}
+</div>
+
+### Floor finish
+
+The baseline's poor floor finish was fixed with a roughing pass followed by custom finishing passes on the pocket floors.
+
+<div class="gallery gallery-cad gallery-3">
+{% include figure.html src="/assets/img/projects/cnc-coaster/cam-roughing.png" caption="Roughing pass on the pocket floor." alt="2D pocket roughing toolpath on the coaster's logo face" %}
+{% include figure.html src="/assets/img/projects/cnc-coaster/cam-floor-scallop.png" caption="Custom floor finish: scallop pass." alt="Scallop finishing toolpath on a pocket floor" %}
+{% include figure.html src="/assets/img/projects/cnc-coaster/cam-floor-inner.png" caption="Custom floor finish: inner pocket contour." alt="Contour finishing toolpath around the inner pocket" %}
+</div>
+
+### Toolpaths
+
 <div class="gallery gallery-cad gallery-2">
 {% include figure.html src="/assets/img/projects/cnc-coaster/cam-side-1.png" caption="Side 1 CAM: rebuilt toolpaths for the logo face, with fewer tool changes." alt="Fusion CAM toolpaths for side 1, the logo face of the hexagonal coaster" %}
 {% include figure.html src="/assets/img/projects/cnc-coaster/cam-side-2.png" caption="Side 2 CAM: corner pockets and back-face engraving." alt="Fusion CAM toolpaths for side 2" %}
@@ -75,3 +96,9 @@ Time per part was cut in half, from 5.5 to 2.75 hours, with better surface finis
 {% include figure.html src="/assets/img/projects/cnc-coaster/batch-six.jpg" caption="A small production batch." alt="Six finished coasters laid out on a table" %}
 {% include figure.html src="/assets/img/projects/cnc-coaster/batch-front.jpg" caption="Batch parts, logo face." alt="Several finished coasters showing the logo face" %}
 </div>
+
+## Next
+
+I designed soft jaws to further improve production. They're being made next.
+
+{% include figure.html src="/assets/img/projects/cnc-coaster/soft-jaws.png" caption="Soft jaw design." alt="CAD model of a soft jaw with a locating ledge and two mounting holes" %}

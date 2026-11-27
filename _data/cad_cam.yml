@@ -39,3 +39,13 @@
   software: Fusion
   caption: Molded cap that fits over the ends of the connector parts.
   project: radar-connector
+- image: /assets/img/projects/cnc-coaster/cam-floor-scallop.png
+  title: Coaster, custom floor finish
+  software: Fusion CAM
+  caption: Scallop finishing pass that fixed the original program's poor floor finish.
+  project: cnc-coaster
+- image: /assets/img/projects/cnc-coaster/soft-jaws.png
+  title: Soft jaws
+  software: Fusion
+  caption: Soft jaws designed to further improve coaster production.
+  project: cnc-coaster

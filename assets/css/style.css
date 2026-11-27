@@ -178,6 +178,9 @@ a.button-quiet:hover { background: transparent; color: var(--accent); border-col
 .project .prose > figure.figure { max-width: 560px; margin: 20px 0 8px; }
 .gallery-2 .figure img { aspect-ratio: 3 / 4; }
 .gallery-cad.gallery-2 .figure img { aspect-ratio: 4 / 3; }
+.gallery-wide { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.gallery-wide .figure img { aspect-ratio: 3 / 2; }
+@media (max-width: 600px) { .gallery-wide { grid-template-columns: 1fr; } }
 @media (max-width: 480px) { .gallery-2 { grid-template-columns: 1fr 1fr; gap: 12px; } }
 @media (max-width: 760px) { .gallery-3 { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 480px) { .gallery-3 { grid-template-columns: 1fr; } }
