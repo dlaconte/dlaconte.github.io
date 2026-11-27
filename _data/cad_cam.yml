@@ -19,3 +19,18 @@
   software: Fusion
   caption: Filleted walls and a divider, chosen to practice layup over difficult geometry.
   project: carbon-tray
+- image: /assets/img/projects/radar-connector/cad-mold-cavity.png
+  title: Injection mold insert, cavity half
+  software: Fusion
+  caption: Bracket cavity and sprue, sized to fit the aluminum mold frame.
+  project: radar-connector
+- image: /assets/img/projects/radar-connector/cad-mold-core.png
+  title: Injection mold insert, core half
+  software: Fusion
+  caption: The raised boss forms the connector pocket in the molded part.
+  project: radar-connector
+- image: /assets/img/projects/radar-connector/cad-bracket.png
+  title: Connector bracket
+  software: Fusion
+  caption: Molded polypropylene bracket with the connector slot and mounting hole.
+  project: radar-connector

@@ -26,6 +26,16 @@ Replace the cable taped to my radar detector's mount with a clean power connecti
 {% include figure.html src="/assets/img/projects/radar-connector/fit-check-print.jpg" caption="Fit check with 3D-printed bracket prototypes before molding." alt="Yellow 3D-printed bracket prototypes fitted to the radar detector and mount" %}
 </div>
 
+## Design
+
+I modeled the bracket and the connector in Fusion. The connector pocket is sized to the magnetic pogo-pin connector: a 14.50 × 4.00 mm slot with Ø3.00 mm magnet holes and Ø1.50 mm pin holes.
+
+<div class="gallery gallery-cad gallery-3">
+{% include figure.html src="/assets/img/projects/radar-connector/cad-bracket.png" caption="Bracket model, with the connector slot and mounting hole." alt="CAD model of the bracket with an oval connector slot and a mounting hole in one tab" %}
+{% include figure.html src="/assets/img/projects/radar-connector/cad-connector.png" caption="Model of the magnetic pogo-pin connector, used to size its pocket." alt="CAD model of the pogo-pin connector with two magnet faces and two pin holes" %}
+{% include figure.html src="/assets/img/projects/radar-connector/cad-connector-sketch.png" caption="Connector pocket sketch: 14.50 × 4.00 mm slot, Ø3.00 magnet and Ø1.50 pin holes." alt="Dimensioned sketch of the connector pocket" %}
+</div>
+
 ## Mold setup
 
 An aluminum mold frame holds a pair of interchangeable insert halves, so each new design only needs new inserts. The inserts were sized to the frame's pockets, and the frame's pins keep the halves aligned. Parts were shot in polypropylene on a 120 psi benchtop molder.
@@ -35,6 +45,11 @@ An aluminum mold frame holds a pair of interchangeable insert halves, so each ne
 {% include figure.html src="/assets/img/projects/radar-connector/mold-open.jpg" caption="Mold open, showing both insert halves, the gate and the runner." alt="Two aluminum mold frame halves holding black printed inserts, with gate and runner visible" %}
 {% include figure.html src="/assets/img/projects/radar-connector/mold-pocket-calipers.jpg" caption="Measuring the frame pocket (50.85 mm) to size the inserts." alt="Digital calipers measuring the pocket of the aluminum mold frame at 50.85 mm" %}
 {% include figure.html src="/assets/img/projects/radar-connector/polypropylene.jpg" caption="Polypropylene pellets: 420–430 °F setpoint, 80–120 °F mold temperature." alt="Jar of violet polypropylene pellets labeled with temperature setpoints" %}
+</div>
+
+<div class="gallery gallery-cad gallery-2">
+{% include figure.html src="/assets/img/projects/radar-connector/cad-mold-cavity.png" caption="Insert half with the bracket cavity and sprue." alt="CAD model of a mold insert half with the bracket cavity and a tapered sprue" %}
+{% include figure.html src="/assets/img/projects/radar-connector/cad-mold-core.png" caption="Matching half, with the raised boss that forms the connector pocket." alt="CAD model of the opposite mold insert half with a raised oval boss" %}
 </div>
 
 ## Iterating with FDM inserts
@@ -71,4 +86,3 @@ Molded brackets with the magnetic pogo-pin connector set in, mounting the detect
 {% include figure.html src="/assets/img/projects/radar-connector/final-brackets.jpg" caption="Final parts: the full L-bracket and the short bracket." alt="Two finished black molded brackets with pogo-pin connectors" %}
 </div>
 
-<p class="placeholder">CAD images go here. Add them to <code>assets/img/projects/radar-connector/</code>.</p>

@@ -191,7 +191,7 @@ a.button-quiet:hover { background: transparent; color: var(--accent); border-col
 }
 .figure figcaption { margin-top: 8px; font-size: 0.9rem; color: var(--muted); line-height: 1.45; }
 .figure figcaption strong { color: var(--text); font-weight: 600; }
-#cad-cam .figure img { object-fit: contain; background: #2b2f35; }
+#cad-cam .figure img, .gallery-cad .figure img { object-fit: contain; background: #2e3440; }
 
 /* ---------- About ---------- */
 .about .prose { max-width: 680px; }
