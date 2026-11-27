@@ -49,3 +49,8 @@
   software: Fusion
   caption: Soft jaws designed to further improve coaster production.
   project: cnc-coaster
+- image: /assets/img/projects/shelf-bracket/cam.png
+  title: Shelf bracket
+  software: Fusion CAM
+  caption: Adaptive roughing, contours and trace for a small reverse-engineered bracket.
+  project: shelf-bracket

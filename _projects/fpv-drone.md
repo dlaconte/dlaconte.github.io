@@ -1,6 +1,6 @@
 ---
 title: FPV drone build
-order: 5
+order: 6
 category: Electronics / Controls
 summary: Built, wired and tuned a Betaflight FPV drone, using logged gyro data to tune PID gains and filters. GPS-logged top speed of 100+ mph.
 # hero: /assets/img/projects/fpv-drone/hero.jpg
