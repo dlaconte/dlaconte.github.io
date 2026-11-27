@@ -312,3 +312,7 @@ a.button-quiet:hover { background: transparent; color: var(--accent); border-col
   cursor: pointer;
 }
 .viewer-close:hover, .viewer-close:focus-visible { background: rgba(255, 255, 255, 0.25); outline: none; }
+
+/* A single wide figure that shows the whole image, uncropped (e.g. labeled photos) */
+.project .prose > figure.figure-wide { max-width: 760px; margin: 20px 0 16px; }
+.figure-wide img { aspect-ratio: auto; object-fit: contain; }
