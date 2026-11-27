@@ -25,14 +25,11 @@ Make an instructional video on machining strategies for small parts and brackets
 I measured the existing steel bracket, modeled it in Fusion, and 3D printed test versions to check the model before machining.
 
 <figure class="figure figure-wide">
-  <a href="{{ '/assets/img/projects/shelf-bracket/parts-labeled.jpg' | relative_url }}"><img src="{{ '/assets/img/projects/shelf-bracket/parts-labeled.jpg' | relative_url }}" alt="Four brackets in a row, labeled: the original steel bracket, a black 3D-printed test, a partially machined aluminum part, and the finished machined bracket" loading="lazy"></a>
+  <a href="{{ '/assets/img/projects/shelf-bracket/parts-labeled.jpg' | relative_url }}"><img src="{{ '/assets/img/projects/shelf-bracket/parts-labeled.jpg' | relative_url }}" alt="Four brackets labeled: a black 3D-printed test, a partially machined aluminum part without its hook slot, the original steel bracket, and the finished machined bracket" loading="lazy"></a>
   <figcaption>From the original part to the finished copy.</figcaption>
 </figure>
 
-<div class="gallery">
 {% include figure.html src="/assets/img/projects/shelf-bracket/cad.png" caption="CAD model of the bracket." alt="CAD model of the small hook-shaped shelf bracket" %}
-{% include figure.html src="/assets/img/projects/shelf-bracket/parts.jpg" caption="The same parts, another view." alt="The original steel shelf bracket beside a black 3D-printed test version and machined aluminum copies" %}
-</div>
 
 ## CAM
 
