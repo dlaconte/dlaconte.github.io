@@ -1,12 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dominic LaConte</title>
-</head>
-<body>
+---
+layout: default
+title: Dominic LaConte
+---
+{% assign projects = site.projects | where_exp: "p", "p.draft != true" | sort: "order" %}
+
+<section class="wrap intro">
   <h1>Dominic LaConte</h1>
-  <p>Site coming soon.</p>
-</body>
-</html>
+  <p class="intro-line">
+    Physics B.A. with an Integrated Design &amp; Engineering minor (mechanical focus) at Wesleyan University, class of 2028.
+    Seeking mechanical and motorsport engineering internships for Summer 2027.
+  </p>
+  <p class="intro-links">
+    {% include resume-link.html class="button" %}
+    <a class="button button-quiet" href="{{ site.linkedin }}">LinkedIn</a>
+    <a class="button button-quiet" href="mailto:{{ site.email }}">{{ site.email }}</a>
+  </p>
+</section>
+
+<section id="projects" class="wrap section">
+  <h2>Projects</h2>
+  <div class="card-grid">
+    {% for p in projects %}
+    <a class="card" href="{{ p.url | relative_url }}">
+      {% if p.hero %}
+      <img class="card-img" src="{{ p.card_image | default: p.hero | relative_url }}" alt="{{ p.hero_alt }}" loading="lazy">
+      {% else %}
+      <div class="card-img image-pending">Photos coming soon</div>
+      {% endif %}
+      <div class="card-body">
+        {% if p.category %}<p class="eyebrow">{{ p.category }}</p>{% endif %}
+        <h3>{{ p.title }}</h3>
+        <p>{{ p.summary }}</p>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="cad-cam" class="wrap section">
+  <h2>CAD &amp; CAM</h2>
+  <p class="section-lede">Models, toolpaths and drawings. Click an image to see it full size.</p>
+  <div class="gallery">
+    {% for item in site.data.cad_cam %}
+    <figure class="figure">
+      <a href="{{ item.image | relative_url }}"><img src="{{ item.image | relative_url }}" alt="{{ item.alt | default: item.title }}" loading="lazy"></a>
+      <figcaption>
+        <strong>{{ item.title }}</strong>
+        {% if item.software %}<span class="muted"> · {{ item.software }}</span>{% endif %}
+        {% if item.caption %}<br>{{ item.caption }}{% endif %}
+        {% if item.project %}{% assign proj = site.projects | where: "slug", item.project | first %}{% if proj %}<br><a href="{{ proj.url | relative_url }}">Part of: {{ proj.title }}</a>{% endif %}{% endif %}
+      </figcaption>
+    </figure>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="about" class="wrap section about">
+  <h2>About</h2>
+  <div class="prose">
+    {% capture about %}{% include about.md %}{% endcapture %}
+    {{ about | markdownify }}
+  </div>
+</section>

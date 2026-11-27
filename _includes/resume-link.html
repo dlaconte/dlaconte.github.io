@@ -1,0 +1,1 @@
+{% if site.resume and site.resume != "" %}<a class="{{ include.class }}" href="{{ site.resume | relative_url }}">Resume</a>{% else %}<span class="{{ include.class }} is-pending" title="Resume PDF not added yet">{{ include.pending_label | default: "Resume (coming soon)" }}</span>{% endif %}

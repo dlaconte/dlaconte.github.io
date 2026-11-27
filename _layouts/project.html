@@ -1,0 +1,54 @@
+---
+layout: default
+---
+{% assign projects = site.projects | where_exp: "p", "p.draft != true" | sort: "order" %}
+<article class="wrap project">
+  <p class="back"><a href="{{ '/#projects' | relative_url }}">&larr; All projects</a></p>
+
+  <header class="project-header">
+    {% if page.category %}<p class="eyebrow">{{ page.category }}</p>{% endif %}
+    <h1>{{ page.title }}</h1>
+    <p class="lede">{{ page.summary }}</p>
+  </header>
+
+  <div class="project-top">
+    {% if page.hero %}
+    <figure class="project-hero">
+      <img src="{{ page.hero | relative_url }}" alt="{{ page.hero_alt }}">
+    </figure>
+    {% else %}
+    <div class="project-hero image-pending">Photos coming soon</div>
+    {% endif %}
+
+    <aside class="facts">
+      {% if page.result %}
+      <div class="result">
+        <p class="result-value">{{ page.result }}</p>
+        {% if page.result_note %}<p class="result-note">{{ page.result_note }}</p>{% endif %}
+      </div>
+      {% endif %}
+      <dl>
+        {% for fact in page.facts %}
+        <dt>{{ fact.label }}</dt>
+        <dd>{{ fact.value }}</dd>
+        {% endfor %}
+      </dl>
+    </aside>
+  </div>
+
+  <div class="prose">
+    {{ content }}
+  </div>
+
+  <nav class="project-pager" aria-label="More projects">
+    {% for p in projects %}
+      {% if p.url == page.url %}
+        {% assign i = forloop.index0 %}
+      {% endif %}
+    {% endfor %}
+    {% assign prev_i = i | minus: 1 %}
+    {% assign next_i = i | plus: 1 %}
+    <span>{% if prev_i >= 0 %}{% assign p = projects[prev_i] %}<a href="{{ p.url | relative_url }}">&larr; {{ p.title }}</a>{% endif %}</span>
+    <span>{% if next_i < projects.size %}{% assign p = projects[next_i] %}<a href="{{ p.url | relative_url }}">{{ p.title }} &rarr;</a>{% endif %}</span>
+  </nav>
+</article>

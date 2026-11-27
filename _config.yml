@@ -1,0 +1,29 @@
+# Site settings. Edit these values; no code changes needed.
+title: Dominic LaConte
+description: Mechanical engineering portfolio of Dominic LaConte.
+url: "https://dominiclaconte.com"
+
+email: dlaconte@wesleyan.edu
+linkedin: https://www.linkedin.com/in/dominic-laconte
+
+# Resume: put your PDF at assets/resume.pdf, then set this to /assets/resume.pdf
+# While it's empty, the site shows "Resume coming soon" instead of a link.
+resume: ""
+
+markdown: kramdown
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      type: projects
+    values:
+      layout: project
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

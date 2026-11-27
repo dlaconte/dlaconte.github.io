@@ -1,0 +1,21 @@
+# CAD & CAM gallery on the home page. Add an entry per image.
+#   image:    path to the image (put new ones in assets/img/cad-cam/)
+#   title:    short name
+#   software: optional, e.g. "Fusion CAM" or "SolidWorks"
+#   caption:  optional, one sentence
+#   project:  optional, the project file name (without .md) to link to
+- image: /assets/img/projects/cnc-coaster/cam-side-1.png
+  title: Coaster, side 1 toolpaths
+  software: Fusion CAM
+  caption: Rebuilt toolpaths for the logo face, with redundant tool changes removed.
+  project: cnc-coaster
+- image: /assets/img/projects/cnc-coaster/cam-side-2.png
+  title: Coaster, side 2 toolpaths
+  software: Fusion CAM
+  caption: Corner pockets and back-face engraving, located off the end reference notches.
+  project: cnc-coaster
+- image: /assets/img/projects/carbon-tray/cad.jpg
+  title: Two-compartment tray
+  software: Fusion
+  caption: Filleted walls and a divider, chosen to practice layup over difficult geometry.
+  project: carbon-tray

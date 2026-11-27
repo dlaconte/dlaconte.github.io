@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title and page.title != site.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.summary | default: site.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="site-name" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="{{ '/#projects' | relative_url }}">Projects</a>
+        <a href="{{ '/#cad-cam' | relative_url }}">CAD/CAM</a>
+        <a href="{{ '/#about' | relative_url }}">About</a>
+        {% include resume-link.html class="nav-resume" pending_label="Resume" %}
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>{{ site.title }}</span>
+      <span class="footer-links">
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        <a href="{{ site.linkedin }}">LinkedIn</a>
+        {% include resume-link.html %}
+      </span>
+    </div>
+  </footer>
+</body>
+</html>
