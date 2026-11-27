@@ -3,8 +3,8 @@ title: Small-part machining tutorial
 order: 3
 category: CNC / Training
 summary: Reverse engineered a steel shelf bracket, machined it in aluminum, and made an instructional video on milling small parts for the lab's students.
-hero: /assets/img/projects/shelf-bracket/parts.jpg
-hero_alt: The original steel shelf bracket beside a black 3D-printed test version and machined aluminum copies
+hero: /assets/img/projects/shelf-bracket/cover.jpg
+hero_alt: The original steel bracket, a black 3D-printed test version and two machined aluminum copies in a row, beside two tool holders with small end mills
 facts:
   - label: Role
     value: Rapid Prototyping Lab Technician, Virginia Tech
@@ -24,7 +24,10 @@ Make an instructional video on machining strategies for small parts and brackets
 
 I measured the existing steel bracket, modeled it in Fusion, and 3D printed test versions to check the model before machining.
 
+<div class="gallery">
+{% include figure.html src="/assets/img/projects/shelf-bracket/parts.jpg" caption="Original steel bracket, a 3D-printed test version, and machined aluminum copies." alt="The original steel shelf bracket beside a black 3D-printed test version and machined aluminum copies" %}
 {% include figure.html src="/assets/img/projects/shelf-bracket/cad.png" caption="CAD model of the bracket." alt="CAD model of the small hook-shaped shelf bracket" %}
+</div>
 
 ## CAM
 
