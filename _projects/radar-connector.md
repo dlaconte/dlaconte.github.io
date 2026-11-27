@@ -28,10 +28,12 @@ Replace the cable taped to my radar detector's mount with a clean power connecti
 
 ## Design
 
-I modeled the bracket, the clip and the connector in Fusion. The connector pocket is sized to the magnetic pogo-pin connector: a 14.50 × 4.00 mm slot with Ø3.00 mm magnet holes and Ø1.50 mm pin holes.
+I modeled the brackets, the clip and the connector in Fusion. The connector pocket is sized to the magnetic pogo-pin connector: a 14.50 × 4.00 mm slot with Ø3.00 mm magnet holes and Ø1.50 mm pin holes.
 
-<div class="gallery gallery-cad">
-{% include figure.html src="/assets/img/projects/radar-connector/cad-bracket.png" caption="Bracket model, with the connector slot and mounting hole." alt="CAD model of the bracket with an oval connector slot and a mounting hole in one tab" %}
+<div class="gallery gallery-cad gallery-3">
+{% include figure.html src="/assets/img/projects/radar-connector/cad-l-bracket.png" caption="Final L-bracket, with the mounting tab, screw hole and connector slot." alt="CAD model of the L-shaped bracket with a square mounting tab and an oval connector slot" %}
+{% include figure.html src="/assets/img/projects/radar-connector/cad-l-bracket-side.png" caption="L-bracket, side view." alt="Side view of the L-bracket CAD model" %}
+{% include figure.html src="/assets/img/projects/radar-connector/cad-bracket.png" caption="Short bracket version, with the connector slot." alt="CAD model of the bracket with an oval connector slot and a mounting hole in one tab" %}
 {% include figure.html src="/assets/img/projects/radar-connector/cad-clip.png" caption="Clip model, with an oval collar on top." alt="CAD model of a small clip part with a raised oval collar" %}
 {% include figure.html src="/assets/img/projects/radar-connector/cad-connector.png" caption="Model of the magnetic pogo-pin connector, used to size its pocket." alt="CAD model of the pogo-pin connector with two magnet faces and two pin holes" %}
 {% include figure.html src="/assets/img/projects/radar-connector/cad-connector-sketch.png" caption="Connector pocket sketch: 14.50 × 4.00 mm slot, Ø3.00 magnet and Ø1.50 pin holes." alt="Dimensioned sketch of the connector pocket" %}

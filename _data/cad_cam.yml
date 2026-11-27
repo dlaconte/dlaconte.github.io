@@ -29,10 +29,10 @@
   software: Fusion
   caption: The raised boss forms the connector pocket in the molded part.
   project: radar-connector
-- image: /assets/img/projects/radar-connector/cad-bracket.png
-  title: Connector bracket
+- image: /assets/img/projects/radar-connector/cad-l-bracket.png
+  title: Connector L-bracket
   software: Fusion
-  caption: Molded polypropylene bracket with the connector slot and mounting hole.
+  caption: Final molded bracket with the mounting tab, screw hole and connector slot.
   project: radar-connector
 - image: /assets/img/projects/radar-connector/cad-clip.png
   title: Connector clip
