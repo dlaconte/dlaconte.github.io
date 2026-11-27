@@ -1,6 +1,6 @@
 ---
 title: Audi A3 engine and driveline work
-order: 2
+order: 3
 category: Automotive
 summary: Diagnosis, repair and maintenance on my 2006 Audi A3 3.2 quattro, ahead of a planned supercharger build.
 hero: /assets/img/projects/audi-a3/hero.jpg

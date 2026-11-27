@@ -1,6 +1,6 @@
 ---
 title: Carbon fiber skinned 3D print
-order: 3
+order: 4
 category: Composites
 summary: Designed, 3D printed and carbon-skinned a two-compartment tray to practice hand layup over difficult geometry.
 hero: /assets/img/projects/carbon-tray/hero.jpg
