@@ -15,6 +15,8 @@ facts:
     value: Polypropylene
   - label: Mold inserts
     value: PETG (FDM) for early iterations, then SLA resin once the geometry was settled
+  - label: Status
+    value: In progress. The brackets work; the cap fit is being refined
 ---
 
 ## Goal
@@ -78,9 +80,9 @@ Once the geometry was roughly settled, I printed the inserts in SLA resin. The r
 
 {% include figure.html src="/assets/img/projects/radar-connector/resin-vs-fdm-bracket.jpg" caption="Bracket inserts: resin (gray) vs. FDM (blue). The resin halves hold sharper edges and a smooth finish." alt="Gray resin bracket insert pair beside a blue FDM pair of the same design" %}
 
-## Result
+## Where it stands
 
-The molded parts installed on the detector and mount, with the wiring connected and the magnetic pogo-pin connector set into the brackets.
+The molded brackets are installed on the detector and mount, with the wiring connected and the magnetic pogo-pin connector set into the brackets.
 
 {% include figure.html src="/assets/img/projects/radar-connector/installed.jpg" caption="Installed on the detector and mount, with the wiring connected." alt="Radar detector on its suction mount with the molded connector parts installed and a braided power cable connected" %}
 
@@ -89,3 +91,6 @@ The molded parts installed on the detector and mount, with the wiring connected 
 {% include figure.html src="/assets/img/projects/radar-connector/final-brackets.jpg" caption="Final parts: the full L-bracket and the short bracket." alt="Two finished black molded brackets with pogo-pin connectors" %}
 </div>
 
+## Next
+
+Get the cable-management cap to fit properly over the ends of the parts. The project is finished once it does.
