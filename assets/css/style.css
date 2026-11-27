@@ -177,6 +177,7 @@ a.button-quiet:hover { background: transparent; color: var(--accent); border-col
 .gallery-tall .figure img { aspect-ratio: 3 / 4; }
 .project .prose > figure.figure { max-width: 560px; margin: 20px 0 8px; }
 .gallery-2 .figure img { aspect-ratio: 3 / 4; }
+.gallery-cad.gallery-2 .figure img { aspect-ratio: 4 / 3; }
 @media (max-width: 480px) { .gallery-2 { grid-template-columns: 1fr 1fr; gap: 12px; } }
 @media (max-width: 760px) { .gallery-3 { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 480px) { .gallery-3 { grid-template-columns: 1fr; } }
@@ -243,6 +244,7 @@ a.button-quiet:hover { background: transparent; color: var(--accent); border-col
 .project .prose > :not(.gallery) { max-width: 760px; }
 .prose h2 { font-size: 1.35rem; margin: 40px 0 12px; }
 .prose h2:first-child { margin-top: 0; }
+.prose h3 { font-size: 1.08rem; margin: 28px 0 8px; }
 .prose p, .prose ul { margin: 0 0 14px; }
 .prose ul { padding-left: 1.25em; }
 .prose li { margin-bottom: 6px; }
