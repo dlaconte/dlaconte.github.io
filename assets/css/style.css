@@ -255,3 +255,53 @@ a.button-quiet:hover { background: transparent; color: var(--accent); border-col
   font-size: 0.95rem;
 }
 .project-pager a { text-decoration: none; }
+
+/* ---------- Full-size image viewer ---------- */
+.figure a { cursor: zoom-in; }
+.viewer {
+  border: none;
+  padding: 0;
+  background: transparent;
+  max-width: 100vw;
+  max-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+}
+.viewer[open] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.viewer::backdrop { background: rgba(10, 11, 13, 0.88); }
+.viewer img {
+  max-width: min(92vw, 1600px);
+  max-height: 82vh;
+  object-fit: contain;
+  border-radius: var(--radius);
+  cursor: default;
+}
+.viewer-caption {
+  margin: 0;
+  max-width: min(92vw, 760px);
+  padding: 0 16px;
+  color: #e6e7e4;
+  font-size: 0.95rem;
+  text-align: center;
+}
+.viewer-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.viewer-close:hover, .viewer-close:focus-visible { background: rgba(255, 255, 255, 0.25); outline: none; }

@@ -37,5 +37,42 @@
       </span>
     </div>
   </footer>
+
+  <dialog class="viewer" id="viewer" aria-label="Full-size image">
+    <button class="viewer-close" type="button" aria-label="Close">&times;</button>
+    <img alt="">
+    <p class="viewer-caption"></p>
+  </dialog>
+  <script>
+    (function () {
+      var dlg = document.getElementById('viewer');
+      if (!dlg || typeof dlg.showModal !== 'function') return; // old browsers: links open the image directly
+      var img = dlg.querySelector('img');
+      var cap = dlg.querySelector('.viewer-caption');
+      document.addEventListener('click', function (e) {
+        var link = e.target.closest('.figure a');
+        if (!link || !link.querySelector('img')) return;
+        e.preventDefault();
+        var thumb = link.querySelector('img');
+        var fig = link.closest('figure');
+        var fc = fig && fig.querySelector('figcaption');
+        img.src = link.getAttribute('href');
+        img.alt = thumb.alt;
+        var text = '';
+        if (fc) {
+          var c = fc.cloneNode(true);
+          c.querySelectorAll('a').forEach(function (a) { a.remove(); });
+          c.querySelectorAll('br').forEach(function (br) { br.replaceWith(' · '); });
+          text = c.textContent.replace(/\s+/g, ' ').replace(/(\s·\s*)+$/, '').trim();
+        }
+        cap.textContent = text;
+        dlg.showModal();
+      });
+      dlg.addEventListener('click', function (e) {
+        if (e.target === dlg || e.target.closest('.viewer-close')) dlg.close();
+      });
+      dlg.addEventListener('close', function () { img.removeAttribute('src'); });
+    })();
+  </script>
 </body>
 </html>
