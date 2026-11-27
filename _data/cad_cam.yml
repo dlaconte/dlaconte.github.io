@@ -34,3 +34,8 @@
   software: Fusion
   caption: Molded polypropylene bracket with the connector slot and mounting hole.
   project: radar-connector
+- image: /assets/img/projects/radar-connector/cad-clip.png
+  title: Connector clip
+  software: Fusion
+  caption: Small molded clip with an oval collar, from the same project.
+  project: radar-connector
